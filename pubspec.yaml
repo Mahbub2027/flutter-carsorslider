@@ -67,6 +67,15 @@ flutter:
     - images/sky.jpg
     - images/moon.jpg
     - images/space.jpg
+    - assetsimages/Mercury.jpg
+    - assetsimages/venus.jpg
+    - assetsimages/earth.jpg
+    - assetsimages/mars.jpg
+    - assetsimages/jupeter.png
+    - assetsimages/saturn.jpg
+    - assetsimages/uranus.jpg
+    - assetsimages/neptune.jpg
+    - assetsimages/moon.jpg
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter/src/widgets/placeholder.dart';
+import 'package:myproject/grid.dart';
 
 class signup extends StatelessWidget {
   const signup({super.key});
@@ -10,13 +11,22 @@ class signup extends StatelessWidget {
     return MaterialApp(
       home: Scaffold(
         body: Center(
-          child: Text("Sign up page"),
+          child: ElevatedButton(onPressed: (){
+            Navigator.pushReplacement(context,MaterialPageRoute(builder: ((context) => grid())));
+          },
+          
+          
+           child: Text("data"))  
+
         ),
       ),
       
     );
   }
 }
+
+
+
 
 
 

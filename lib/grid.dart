@@ -1,3 +1,197 @@
+import 'package:flutter/material.dart';
+import 'package:flutter/src/widgets/framework.dart';
+import 'package:flutter/src/widgets/placeholder.dart';
+import 'package:myproject/login.dart';
+
+class grid extends StatelessWidget {
+  const grid({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      home: homepage(),
+    );
+  }
+}
+
+class homepage extends StatefulWidget {
+  const homepage({super.key});
+
+  @override
+  State<homepage> createState() => _homepageState();
+}
+
+class _homepageState extends State<homepage> {
+  @override
+  Widget build(BuildContext context) {
+    return  Scaffold(  
+      //appBar: AppBar(  
+       // title: Text("Flutter GridView Demo"),  
+        //backgroundColor: Colors.green,),  
+      body: Padding(
+        padding: const EdgeInsets.all(8.0),
+        child: GridView.count(
+          crossAxisCount: 2,
+          crossAxisSpacing: 10,
+          mainAxisSpacing: 10,
+          
+          children: [
+                Container(
+                  //width: 300,
+                  //height: 300,
+                  child: InkWell(
+                  onTap: () {
+      
+                Navigator.pushReplacement(context,MaterialPageRoute(builder: (context)=>login()));
+              },
+                  child: Ink.image(
+                     // width: 300,
+                      //height: 300,
+                  //image: const NetworkImage(
+                  //  'https://cdn.pixabay.com/photo/2022/12/02/14/13/desert-7630943_1280.jpg', )
+                      image: AssetImage("assetsimages/Mercury.jpg"),   fit: BoxFit.cover,
+                  ),)
+          ),
+          Container(
+                      //width: 300,
+                      //height: 300,
+                  child: InkWell(
+                  onTap: () {
+      
+                Navigator.pushReplacement(context,MaterialPageRoute(builder: (context)=>login()));
+              },
+                  child: Ink.image(
+                      //width: 300,
+                      //height: 300,
+                  //image: const NetworkImage(
+                  //  'https://cdn.pixabay.com/photo/2022/12/02/14/13/desert-7630943_1280.jpg', )
+                     image: AssetImage("assetsimages/venus.jpg"),  fit: BoxFit.cover,
+                  ),)
+          ),
+          Container(
+      
+                      //width: 300,
+                      //height: 300,
+                  child: InkWell(
+                  onTap: () {
+      
+                Navigator.pushReplacement(context,MaterialPageRoute(builder: (context)=>login()));
+              },
+                  child: Ink.image(
+                     // width: 300,
+                     // height: 300,
+                  //image: const NetworkImage(
+                  //  'https://cdn.pixabay.com/photo/2022/12/02/14/13/desert-7630943_1280.jpg', )
+                      image: AssetImage("assetsimages/earth.jpg"),   fit: BoxFit.cover, 
+                  ),)
+          ),
+          Container(
+                  child: InkWell(
+                  onTap: () {
+      
+                Navigator.pushReplacement(context,MaterialPageRoute(builder: (context)=>login()));
+              },
+                  child: Ink.image(
+                      //width: 300,
+                     // height: 300,
+                  //image: const NetworkImage(
+                  //  'https://cdn.pixabay.com/photo/2022/12/02/14/13/desert-7630943_1280.jpg', )
+                      image: AssetImage("assetsimages/mars.jpg"),   fit: BoxFit.cover,
+                  ),)
+          ),
+          Container(
+                  child: InkWell(
+                  onTap: () {
+      
+                Navigator.pushReplacement(context,MaterialPageRoute(builder: (context)=>login()));
+              },
+                  child: Ink.image(
+                      //width: 300,
+                      //height: 300,
+                  //image: const NetworkImage(
+                  //  'https://cdn.pixabay.com/photo/2022/12/02/14/13/desert-7630943_1280.jpg', )
+                      image: AssetImage("assetsimages/jupeter.png"),    fit: BoxFit.cover,
+                  ),)
+          ),
+          Container(
+                  child: InkWell(
+                  onTap: () {
+      
+                Navigator.pushReplacement(context,MaterialPageRoute(builder: (context)=>login()));
+              },
+                  child: Ink.image(
+                      //width: 300,
+                     // height: 300,
+                  //image: const NetworkImage(
+                  //  'https://cdn.pixabay.com/photo/2022/12/02/14/13/desert-7630943_1280.jpg', )
+                      image: AssetImage("assetsimages/saturn.jpg"),    fit: BoxFit.cover,
+                  ),)
+          ),
+          Container(
+                  child: InkWell(
+                  onTap: () {
+      
+                Navigator.pushReplacement(context,MaterialPageRoute(builder: (context)=>login()));
+              },
+                  child: Ink.image(
+                      //width: 300,
+                      ///height: 300,
+                  //image: const NetworkImage(
+                  //  'https://cdn.pixabay.com/photo/2022/12/02/14/13/desert-7630943_1280.jpg', )
+                      image: AssetImage("assetsimages/uranus.jpg"),    fit: BoxFit.cover,
+                  ),)
+          ),
+          Container(
+                  child: InkWell(
+                  onTap: () {
+      
+                Navigator.pushReplacement(context,MaterialPageRoute(builder: (context)=>login()));
+              },
+                  child: Ink.image(
+                      //width: 300,
+                     // height: 300,
+                  //image: const NetworkImage(
+                  //  'https://cdn.pixabay.com/photo/2022/12/02/14/13/desert-7630943_1280.jpg', )
+                      image: AssetImage("assetsimages/neptune.jpg"),  fit: BoxFit.cover, 
+                  ),)
+          ),
+          Container(
+                  child: InkWell(
+                  onTap: () {
+      
+                Navigator.pushReplacement(context,MaterialPageRoute(builder: (context)=>login()));
+              },
+                  child: Ink.image(
+                      //width: 300,
+                     // height: 300,
+                  //image: const NetworkImage(
+                  //  'https://cdn.pixabay.com/photo/2022/12/02/14/13/desert-7630943_1280.jpg', )
+                      image: AssetImage("assetsimages/moon.jpg"), fit: BoxFit.cover,   
+                  ),)
+          ),
+      
+      
+      
+          ]
+          
+          
+          
+          ,),
+      ));
+    
+  }  
+}
+
+
+
+
+
+
+
+
+
+
+
 /*import 'package:flutter/material.dart';  
   
 void main() => runApp(MyApp());  

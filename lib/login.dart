@@ -12,12 +12,7 @@ class login extends StatelessWidget {
         body: Center(
           child: ElevatedButton(
             onPressed: (){
-              showDialog(context: context, 
-                  builder: (context){
-                    return Center(child: CircularProgressIndicator());
-
-                  });
-              Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => grid()));
+              //Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => grid()));
             },
              child: Text("Click me")),
         ),
